@@ -1,0 +1,42 @@
+.list-style {
+    padding: 20px;
+    background-color: rgb(119, 117, 117)
+}
+
+.pill-style {
+    padding-top: 20px;
+}
+
+.list-group-item {
+    margin: 5px;
+}
+
+.fa-plus {
+    color: white;
+    margin-top: 10px;
+    align-self: flex-end
+}
+
+.nav-pills .nav-link {
+    color: black;
+    background-color: #c6c8ca;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+h2 {
+    margin-top: 25px;
+    margin-bottom: 35px;
+    text-align: center;
+}
+
+h2 i {
+    margin-right: 20px;
+
+}
+
+#go-back-language {
+    font-size: 1.2rem;
+    margin-left: 10px;
+}
+
