@@ -3,6 +3,7 @@ import {connect} from 'react-redux'
 import EditableItem from "./editable-item";
 import {useParams} from "react-router-dom";
 import lessonService from '../services/lesson-service'
+import moduleService from "../services/module-service";
 
 const LessonTabs = (
     {lessons=[
@@ -11,7 +12,9 @@ const LessonTabs = (
             {_id: "456", title:"Lesson C"}
     ],
         findLessonsForModule,
-        createLessonForModule
+        createLesson,
+        updateLesson,
+        deleteLesson
 
     }) => {
 
@@ -32,12 +35,14 @@ const LessonTabs = (
                     <li className = "nav-item">
                         <EditableItem
                             active = {lesson._id === lessonId}
+                            updateItem={updateLesson}
+                            deleteItem={deleteLesson}
                             to={`/courses/editor/${courseId}/${moduleId}/${lesson._id}`}
                             item={lesson}/>
                     </li>)
             }
             <li>
-                <i onClick={() => createLessonForModule(moduleId)} className="fas fa-plus"></i>
+                <i onClick={() => createLesson(moduleId)} className="fas fa-plus"></i>
             </li>
         </ul>
     </div>)}
@@ -53,13 +58,27 @@ const dtpm = (dispatch) => ({
                 lessons: lessons
             }))
     },
-    createLessonForModule: (moduleId) => {
-        lessonService.createLessonForModule(moduleId, {title: "New Lesson"})
+    createLesson: (moduleId) => {
+        lessonService.createLesson(moduleId, {title: "New Lesson"})
             .then(lesson => dispatch({
                 type: "CREATE_LESSON",
                 lesson
             }))
-    }
+    },
+
+    updateLesson: (lesson) => {
+        lessonService.updateLesson(lesson._id, lesson)
+            .then(status => dispatch({
+                type: "UPDATE_LESSON",
+
+                // syntax below is the same as module:module
+                lesson
+            }))
+    },
+
+    deleteLesson: (item) =>
+        lessonService.deleteLesson(item._id).then(status =>
+            dispatch({type: "DELETE_LESSON", lessonToDelete: item })),
 })
 
 export default connect(stpm, dtpm)(LessonTabs)
