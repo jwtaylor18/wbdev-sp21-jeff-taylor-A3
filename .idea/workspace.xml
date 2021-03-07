@@ -2,29 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dcf02cd4-d911-43b2-9bba-5205e6251fce" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/wbdv-sp21-jeff-taylor-client-react.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/course-card.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/course-editor.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/course-grid.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/course-manager.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/course-row.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/course-table.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/home.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/services/course-service.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/styles/course-card-styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/styles/course-editor-styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/styles/course-grid-styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/styles/course-manager-styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/styles/course-row-styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/styles/course-table-styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/editable-item.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/lesson-tabs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/module-list.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/reducers/lesson-reducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/reducers/modules-reducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/services/module-service.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/course-editor.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/course-editor.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/course-manager.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/course-manager.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/course-row.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/course-row.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/course-editor-styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/course-editor-styles.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,8 +24,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -130,7 +120,15 @@
       <workItem from="1613791417690" duration="6084000" />
       <workItem from="1613852957816" duration="18350000" />
       <workItem from="1613921262234" duration="1642000" />
-      <workItem from="1613936004222" duration="3051000" />
+      <workItem from="1613936004222" duration="4886000" />
+      <workItem from="1614014731170" duration="2404000" />
+      <workItem from="1614445128348" duration="6175000" />
+      <workItem from="1614550934727" duration="758000" />
+      <workItem from="1614551717642" duration="805000" />
+      <workItem from="1614653503806" duration="618000" />
+      <workItem from="1614739292722" duration="2340000" />
+      <workItem from="1614905090755" duration="6532000" />
+      <workItem from="1615059157053" duration="10110000" />
     </task>
     <servers />
   </component>
@@ -173,6 +171,18 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/components/lesson-tabs.js</url>
+          <line>16</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/index.js">

@@ -26,7 +26,7 @@ const CourseRow = (
 
     return (<tr class="d-flex">
         <td class="col-9 col-md-6 col-lg-4">
-            {!editing && <Link to="/courses/editor">{title}</Link>}
+            {!editing && <Link to={`/courses/editor/${course._id}`}>{title}</Link>}
             {editing && <input
                 onChange={(event) => setNewTitle(event.target.value)}
                 value={newTitle}

@@ -108,7 +108,9 @@ class CourseManager extends React.Component {
                 {/*<Route path="/courses/editor"*/}
                 {/*       render={(props) => <CourseEditor props={props}/>}>*/}
                 {/*</Route>*/}
-                <Route path="/courses/editor"
+                <Route path={["/courses/editor/:courseId",
+                              "/courses/editor/:courseId/:moduleId",
+                              "/courses/editor/:courseId/:moduleId/:lessonId"]}
                        render={(props) => <CourseEditor {...props}/>}>
                 </Route>
             </div>
