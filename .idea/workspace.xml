@@ -2,19 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dcf02cd4-d911-43b2-9bba-5205e6251fce" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/editable-item.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/lesson-tabs.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/module-list.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/reducers/lesson-reducer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/reducers/modules-reducer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/services/module-service.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/services/lesson-service.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/course-editor.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/course-editor.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/course-manager.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/course-manager.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/course-row.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/course-row.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/course-editor-styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/course-editor-styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/editable-item.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/editable-item.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/lesson-tabs.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/lesson-tabs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/module-list.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/module-list.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/reducers/lesson-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/lesson-reducer.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,19 +83,6 @@
     <property name="project.structure.side.proportion" value="0.3612663" />
     <property name="settings.editor.selected.configurable" value="preferences.updates" />
   </component>
-  <component name="RunManager">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
@@ -128,7 +110,8 @@
       <workItem from="1614653503806" duration="618000" />
       <workItem from="1614739292722" duration="2340000" />
       <workItem from="1614905090755" duration="6532000" />
-      <workItem from="1615059157053" duration="10110000" />
+      <workItem from="1615059157053" duration="12494000" />
+      <workItem from="1615131157146" duration="4911000" />
     </task>
     <servers />
   </component>
@@ -177,8 +160,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/components/lesson-tabs.js</url>
-          <line>16</line>
-          <properties lambdaOrdinal="-1" />
+          <line>26</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>

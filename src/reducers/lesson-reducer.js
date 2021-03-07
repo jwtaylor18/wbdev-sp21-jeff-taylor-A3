@@ -1,13 +1,29 @@
 const initialState = {
-    lessons: [
-        {_id: "134", title:"Lesson 134"},
-        {_id: "234", title:"Lesson 234"},
-        {_id: "456", title:"Lesson 456"}
-    ]
+    lessons: []
 }
 
 const lessonReducer = (state=initialState, action) => {
-    return state
+
+    switch (action.type){
+
+        case "CREATE_LESSON":
+            return {
+                ...state,
+                lessons: [
+                    ...state.lessons,
+                    action.lesson
+                ]
+            }
+
+        case "FIND_LESSONS":
+            return {
+                ...state,
+                lessons: action.lessons
+            }
+        default:
+            return state
+    }
+
 }
 
 export default lessonReducer
