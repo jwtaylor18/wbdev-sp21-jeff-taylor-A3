@@ -1,16 +1,20 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import {Link, useParams} from "react-router-dom";
 import '../styles/course-editor-styles.css'
 import moduleReducer from '../reducers/modules-reducer.js'
 import lessonReducer from "../reducers/lesson-reducer";
+import topicReducer from "../reducers/topic-reducer";
 import {Provider} from "react-redux";
 import ModuleList from "./module-list";
 import {combineReducers, createStore} from "redux";
 import LessonTabs from "./lesson-tabs";
+import TopicPills from "./topic-pills";
+import courseService from "../services/course-service"
 
 const reducer = combineReducers({
     moduleReducer: moduleReducer,
-    lessonReducer: lessonReducer
+    lessonReducer: lessonReducer,
+    topicReducer: topicReducer
 })
 
 // const store = createStore(moduleReducer)
@@ -23,13 +27,20 @@ const CourseEditor = ({history}) => {
 
     const {courseId, moduleId} = useParams()
 
+    const [courseTitle, setCourseTitle] = useState('');
+    useEffect(() => getTitle(courseId));
+
+    const getTitle = (courseId) => {
+        courseService.findCourseById(courseId)
+            .then(course => setCourseTitle(course.title));
+    }
     return (<Provider store={store}>
         <div>
             {/*paste everything from course editor in A1, replace h2 below*/}
             <h2>
                 {/*<i onClick={() => props.history.goBack()} className="fas fa-arrow-left"></i>*/}
                 <i onClick={() => history.goBack()} className="fas fa-arrow-left float-left"><span id="go-back-language">Go back</span></i>
-                <span>Course  {courseId} {moduleId}</span>
+                <span>Course Editor Page: {courseTitle}</span>
             </h2>
             <div className="row">
                 <div className="col-4">
@@ -74,6 +85,7 @@ const CourseEditor = ({history}) => {
                     {/*        <a className="nav-link disabled" href="#"><span>+</span></a>*/}
                     {/*    </li>*/}
                     {/*</ul>*/}
+                    <TopicPills/>
                 </div>
             </div>
         </div>

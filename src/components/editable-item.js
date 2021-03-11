@@ -18,8 +18,8 @@ const EditableItem = (
             {
                 !editing &&
                 <>
-                    <Link className={`nav-link ${active?'active':''}`} to={to}>{item.title}</Link>
-                    <i onClick={()=> setEditing(true)} className="fas fa-edit"></i>
+                    <Link className={`d-inline nav-link ${active?'active':''}`} to={to}>{item.title}</Link>
+                    <i onClick={()=> setEditing(true)} className="fas fa-edit float-right"></i>
                 </>
             }
             {
@@ -34,8 +34,8 @@ const EditableItem = (
                     <i onClick={()=> {
                         setEditing(false)
                         updateItem(cachedItem)
-                    }} className = "fas fa-check"></i>
-                    <i onClick={() => {deleteItem(item); setEditing(false)}} className = "fas fa-times"></i>
+                    }} className = "fas fa-check float-right"></i>
+                    <i onClick={() => {deleteItem(item); setEditing(false)}} className = "fas fa-times float-right"></i>
                 </>
             }
         </>

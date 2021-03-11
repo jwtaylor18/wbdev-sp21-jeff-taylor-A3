@@ -2,12 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dcf02cd4-d911-43b2-9bba-5205e6251fce" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/topic-pills.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/reducers/topic-reducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/services/topic-service.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/course-card.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/course-card.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/course-editor.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/course-editor.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/editable-item.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/editable-item.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/home.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/lesson-tabs.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/lesson-tabs.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/module-list.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/module-list.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reducers/lesson-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/lesson-reducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/lesson-service.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/lesson-service.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/module-service.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/module-service.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/course-service.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/course-service.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,21 +86,6 @@
     <property name="project.structure.side.proportion" value="0.3612663" />
     <property name="settings.editor.selected.configurable" value="preferences.updates" />
   </component>
-  <component name="RunManager">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
@@ -124,7 +114,9 @@
       <workItem from="1614739292722" duration="2340000" />
       <workItem from="1614905090755" duration="6532000" />
       <workItem from="1615059157053" duration="12494000" />
-      <workItem from="1615131157146" duration="8558000" />
+      <workItem from="1615131157146" duration="18408000" />
+      <workItem from="1615338824187" duration="2973000" />
+      <workItem from="1615415689516" duration="4201000" />
     </task>
     <servers />
   </component>

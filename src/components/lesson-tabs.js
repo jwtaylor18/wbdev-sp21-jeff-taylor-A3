@@ -27,8 +27,7 @@ const LessonTabs = (
         }
     }, [moduleId])
 
-    return (<div>
-        <h2>Lessons</h2>
+    return (<div className="wbdv-lesson-tabs">
         <ul className="nav nav-pills">
             {
                 lessons.map(lesson =>
@@ -42,7 +41,7 @@ const LessonTabs = (
                     </li>)
             }
             <li>
-                <i onClick={() => createLesson(moduleId)} className="fas fa-plus"></i>
+                <button onClick={() => createLesson(moduleId)}>Create New Lesson</button>
             </li>
         </ul>
     </div>)}

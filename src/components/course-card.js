@@ -27,7 +27,7 @@ const CourseCard = ({course, updateCourse, deleteCourse}) => {
                     value={newTitle}
                     className="form-control"/>}
                 <p className="card-text">Sample description</p>
-                <Link to="/courses/editor" className="btn btn-primary">{course.title}</Link>
+                <Link to={`/courses/editor/${course._id}`} className="btn btn-primary">{course.title}</Link>
                 <div class={"wbdv-card-icons"}>
                     {!editing && <i onClick={() => setEditing(true)} className="fas fa-edit float-right"></i>}
                     {editing && <i onClick={() => {deleteCourse(course); setEditing(false)}} className="fas fa-trash float-right"></i>}
