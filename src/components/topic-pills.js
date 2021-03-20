@@ -18,7 +18,7 @@ const TopicPills = ({
 
     }) => {
 
-        const {courseId, moduleId, lessonId} = useParams()
+        const {courseId, moduleId, lessonId, topicId} = useParams()
 
         useEffect(() => {
             if (lessonId !== "undefined" && typeof lessonId !== "undefined") {
@@ -36,7 +36,7 @@ const TopicPills = ({
                                     // active = {lesson._id === lessonId}
                                     updateItem={updateTopic}
                                     deleteItem={deleteTopic}
-                                    // to={`/courses/editor/${courseId}/${moduleId}/${lesson._id}`}
+                                    to={`/courses/editor/${courseId}/${moduleId}/${lessonId}/ABC123`}
                                     item={topic}/>
                             </li>)
                     }

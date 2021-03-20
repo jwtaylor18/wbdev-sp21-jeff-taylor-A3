@@ -10,6 +10,7 @@ import {combineReducers, createStore} from "redux";
 import LessonTabs from "./lesson-tabs";
 import TopicPills from "./topic-pills";
 import courseService from "../services/course-service"
+import WidgetList from "./widgets/widget-list";
 
 const reducer = combineReducers({
     moduleReducer: moduleReducer,
@@ -28,6 +29,7 @@ const CourseEditor = ({history}) => {
     const {courseId, moduleId} = useParams()
 
     const [courseTitle, setCourseTitle] = useState('');
+
     useEffect(() => getTitle(courseId));
 
     const getTitle = (courseId) => {
@@ -43,7 +45,7 @@ const CourseEditor = ({history}) => {
                 <span>Course Editor Page: {courseTitle}</span>
             </h2>
             <div className="row">
-                <div className="col-4">
+                <div className="col-3">
                     <ModuleList/>
 
 
@@ -66,7 +68,7 @@ const CourseEditor = ({history}) => {
                     {/*    <i className="fa fa-plus"></i>*/}
                     {/*</div>*/}
                 </div>
-                <div className="col-8">
+                <div className="col-9">
                     <LessonTabs/>
                     {/*<ul className="nav nav-pills nav-fill pill-style">*/}
                     {/*    <li className="nav-item">*/}
@@ -86,6 +88,7 @@ const CourseEditor = ({history}) => {
                     {/*    </li>*/}
                     {/*</ul>*/}
                     <TopicPills/>
+                    <WidgetList/>
                 </div>
             </div>
         </div>
