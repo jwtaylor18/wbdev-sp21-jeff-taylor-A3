@@ -3,36 +3,36 @@ const LESSONS_URL = "https://wbdv-generic-server.herokuapp.com/api/jefftaylor/le
 
 const TOPICS_URL = "https://wbdv-generic-server.herokuapp.com/api/jefftaylor/topics"
 
-export const updateTopic =(topicId, topic) =>
-    fetch(`${TOPICS_URL}/${topicId}`, {
+export const updateWidget =(widgetId, widget) =>
+    fetch(`http://localhost:8080/api/widgets/${widgetId}`, {
         method: "PUT",
-        body: JSON.stringify(topic),
+        body: JSON.stringify(widget),
         headers: {
             'content-type': 'application/json'
         }
     })
         .then(response=> response.json())
 
-export const findTopicsForLesson = (lessonId) =>
-    fetch(`${LESSONS_URL}/${lessonId}/topics`)
+export const findWidgetsForTopic = (topicId) =>
+    fetch(`http://localhost:8080/api/topics/${topicId}/widgets`)
         .then(response => response.json())
 
-export const createTopic = (lessonId, topic) =>
-    fetch(`${LESSONS_URL}/${lessonId}/topics`, {
+export const createWidget = (topicId, widget) =>
+    fetch(`http://localhost:8080/api/topics/${topicId}/widgets`, {
         method: "POST",
-        body: JSON.stringify(topic),
+        body: JSON.stringify(widget),
         headers: {
             'content-type': 'application/json'
         }
     })
         .then(response => response.json())
 
-export const deleteTopic = (topicId) =>
-    fetch(`${TOPICS_URL}/${topicId}`, {
+export const deleteWidget = (widgetId) =>
+    fetch(`http://localhost:8080/api/widgets/${widgetId}`, {
         method: "DELETE"
     })
         .then(response => response.json())
 
 export default {
-    updateTopic, findTopicsForLesson, createTopic, deleteTopic
+    updateWidget, findWidgetsForTopic, createWidget, deleteWidget
 }

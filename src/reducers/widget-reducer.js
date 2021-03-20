@@ -49,4 +49,4 @@ const widgetReducer = (state=initialState, action) => {
 
 }
 
-export default topicReducer
+export default widgetReducer

@@ -8,7 +8,9 @@ const HeadingWidget = ({widget, editing}) => {
                 editing &&
                 <>
                     <input value={widget.text} className="form-control"/>
-                    <select value={widget.size} className="form-control">
+                    <label for="headingSize">Choose a heading size:</label>
+                    {/*<select value={widget.size} className="form-control">*/}
+                    <select name="headingSize" id="headingSize">
                         <option value={1}>Heading 1</option>
                         <option value={2}>Heading 2</option>
                         <option value={3}>Heading 3</option>

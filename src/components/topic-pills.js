@@ -36,7 +36,7 @@ const TopicPills = ({
                                     // active = {lesson._id === lessonId}
                                     updateItem={updateTopic}
                                     deleteItem={deleteTopic}
-                                    to={`/courses/editor/${courseId}/${moduleId}/${lessonId}/ABC123`}
+                                    to={`/courses/editor/${courseId}/${moduleId}/${lessonId}/${topic._id}`}
                                     item={topic}/>
                             </li>)
                     }
