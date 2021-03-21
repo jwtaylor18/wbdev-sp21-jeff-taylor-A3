@@ -4,6 +4,7 @@ import ParagraphWidget from "./paragraph-widget";
 import {useParams} from 'react-router-dom'
 import widgetService from "../../services/widget-service";
 import {connect} from "react-redux";
+import widgetActions from "../../actions/widget-actions";
 
 const WidgetList = ({
 
@@ -53,34 +54,43 @@ const WidgetList = ({
         widgets: state.widgetReducer.widgets
     })
 
-    const dtpm = (dispatch) => ({
-        findWidgetsForTopic: (topicId) => {
-            widgetService.findWidgetsForTopic(topicId)
-                .then(widgets => dispatch({
-                    type: "FIND_WIDGETS",
-                    widgets: widgets
-                }))
-        },
-        createWidget: (topicId) => {
-            widgetService.createWidget(topicId, {type: "HEADING", size: 1, text: "New heading widget - update me"})
-                .then(widget => dispatch({
-                    type: "CREATE_WIDGET",
-                    widget
-                }))
-        },
+    // const dtpm = (dispatch) => ({
+    //     findWidgetsForTopic: (topicId) => {
+    //         widgetService.findWidgetsForTopic(topicId)
+    //             .then(widgets => dispatch({
+    //                 type: "FIND_WIDGETS",
+    //                 widgets: widgets
+    //             }))
+    //     },
+    //     createWidget: (topicId) => {
+    //         widgetService.createWidget(topicId, {type: "HEADING", size: 1, text: "New heading widget - update me"})
+    //             .then(widget => dispatch({
+    //                 type: "CREATE_WIDGET",
+    //                 widget
+    //             }))
+    //     },
+    //
+    //     updateWidget: (widget) => {
+    //         widgetService.updateWidget(widget.id, widget)
+    //             .then(status => dispatch({
+    //                 type: "UPDATE_WIDGET",
+    //                 // syntax below is the same as widget:widget
+    //                 widget
+    //             }))
+    //     },
+    //
+    //     deleteWidget: (widget) =>
+    //         widgetService.deleteWidget(widget.id).then(status =>
+    //             dispatch({type: "DELETE_WIDGET", widgetToDelete: widget })),
+    // })
 
-        updateWidget: (widget) => {
-            widgetService.updateWidget(widget.id, widget)
-                .then(status => dispatch({
-                    type: "UPDATE_WIDGET",
-                    // syntax below is the same as widget:widget
-                    widget
-                }))
-        },
-
-        deleteWidget: (widget) =>
-            widgetService.deleteWidget(widget.id).then(status =>
-                dispatch({type: "DELETE_WIDGET", widgetToDelete: widget })),
-    })
+const dtpm = (dispatch) => {
+    return {
+        findWidgetsForTopic: (topicId) => widgetActions.findWidgetsForTopic(dispatch, topicId),
+        createWidget: (topicId) => widgetActions.createWidget(dispatch, topicId),
+        updateWidget: (widget) => widgetActions.updateWidget(dispatch, widget),
+        deleteWidget: (widget) => widgetActions.deleteWidget(dispatch, widget)
+    }
+}
 
 export default connect(stpm, dtpm)(WidgetList)

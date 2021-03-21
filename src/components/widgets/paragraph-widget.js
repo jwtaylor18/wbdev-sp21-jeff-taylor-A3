@@ -14,10 +14,10 @@ const ParagraphWidget = ({widget, updateWidget, deleteWidget}) => {
             }
             {
                 editing &&
-                <>
+                <div>
                     <i onClick={() => deleteWidget(widget)} className="fas fa-trash fa-2x float-right"></i>
                     <i onClick={() => {setEditing(false); updateWidget(cachedItem)}} className="fas fa-check fa-2x float-right"></i>
-                </>
+                </div>
             }
             <p>
                 {widget.text}
