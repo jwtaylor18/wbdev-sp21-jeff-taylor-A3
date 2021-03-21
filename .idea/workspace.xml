@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dcf02cd4-d911-43b2-9bba-5205e6251fce" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/actions/widget-actions.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/widgets/paragraph-widget.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/widgets/paragraph-widget.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/widgets/widget-list.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/widgets/widget-list.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -137,7 +134,7 @@
       <workItem from="1616119800154" duration="4704000" />
       <workItem from="1616206671066" duration="609000" />
       <workItem from="1616252102431" duration="6913000" />
-      <workItem from="1616270514578" duration="10282000" />
+      <workItem from="1616270514578" duration="10925000" />
     </task>
     <servers />
   </component>
