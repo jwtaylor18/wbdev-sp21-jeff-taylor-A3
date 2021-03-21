@@ -3,12 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="dcf02cd4-d911-43b2-9bba-5205e6251fce" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/course-editor.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/course-editor.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/topic-pills.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/topic-pills.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/widgets/heading-widget.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/widgets/heading-widget.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/widgets/paragraph-widget.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/widgets/paragraph-widget.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/widgets/widget-list.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/widgets/widget-list.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reducers/widget-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/widget-reducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/widget-service.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/widget-service.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,6 +79,21 @@
     <property name="project.structure.side.proportion" value="0.3612663" />
     <property name="settings.editor.selected.configurable" value="preferences.updates" />
   </component>
+  <component name="RunManager">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
@@ -120,7 +132,7 @@
       <workItem from="1616119800154" duration="4704000" />
       <workItem from="1616206671066" duration="609000" />
       <workItem from="1616252102431" duration="6913000" />
-      <workItem from="1616270514578" duration="5564000" />
+      <workItem from="1616270514578" duration="9487000" />
     </task>
     <servers />
   </component>
