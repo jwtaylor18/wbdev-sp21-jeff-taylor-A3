@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dcf02cd4-d911-43b2-9bba-5205e6251fce" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/actions/widget-actions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/widgets/image-widget.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/widgets/list-widget.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/widgets/paragraph-widget.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/widgets/paragraph-widget.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/env.env" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/widgets/widget-list.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/widgets/widget-list.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -66,7 +68,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../A1/webdev" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../A7 Node" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -83,21 +85,6 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\jeff.taylor\Documents\2-NEU\Web Dev\Assignments\A3\wbdv-sp21-jeff-taylor-client-react\src" />
     </key>
-  </component>
-  <component name="RunManager">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
@@ -138,6 +125,10 @@
       <workItem from="1616206671066" duration="609000" />
       <workItem from="1616252102431" duration="6913000" />
       <workItem from="1616270514578" duration="10282000" />
+      <workItem from="1616724880731" duration="647000" />
+      <workItem from="1617148151862" duration="5421000" />
+      <workItem from="1617242249553" duration="1755000" />
+      <workItem from="1617323340095" duration="641000" />
     </task>
     <servers />
   </component>
