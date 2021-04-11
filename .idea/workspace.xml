@@ -2,12 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dcf02cd4-d911-43b2-9bba-5205e6251fce" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/widgets/image-widget.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/widgets/list-widget.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/quizzes/questions/multiple-choice-question.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/quizzes/questions/question.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/quizzes/questions/true-false-question.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/quizzes/quiz.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/quizzes/quizzes-list.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/services/question-service.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/services/quiz-service.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env.env" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/widgets/widget-list.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/widgets/widget-list.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/course-row.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/course-row.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -129,6 +133,13 @@
       <workItem from="1617148151862" duration="5421000" />
       <workItem from="1617242249553" duration="1755000" />
       <workItem from="1617323340095" duration="641000" />
+      <workItem from="1617412153645" duration="1270000" />
+      <workItem from="1617481734026" duration="3922000" />
+      <workItem from="1617548291718" duration="3609000" />
+      <workItem from="1617841301298" duration="3735000" />
+      <workItem from="1617924802294" duration="9045000" />
+      <workItem from="1618066949309" duration="1291000" />
+      <workItem from="1618148259066" duration="3878000" />
     </task>
     <servers />
   </component>
